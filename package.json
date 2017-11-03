@@ -1,12 +1,12 @@
 {
-  "name": "mehendi-apis",
+  "name": "Demo app",
   "version": "0.0.1",
-  "description": "mehendi webapp for social networking",
+  "description": "Demo app",
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "mangesh <mangesh.tembhurne@spdpl.com>",
+  "author": "mangesh <mtembhurne4@gmail.com>",
   "license": "WTFPL",
   "dependencies": {
     "body-parser": "^1.18.2",
