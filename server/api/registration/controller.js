@@ -21,11 +21,7 @@ exports.create = (req, res, next) => {
         if (err) {
             return res.status(409).json({ err: err });
         }
-        return maindb({
-            name: req.params.name,
-            email: req.params.email,
-            password: req.params.password
-        }).save()
+        return maindb(params).save()
             .then((register) => {
                 logger.info('registration', register);
                 return res.send('User Register Successfully');
