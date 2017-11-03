@@ -1,0 +1,20 @@
+{
+  "name": "mehendi-apis",
+  "version": "0.0.1",
+  "description": "mehendi webapp for social networking",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mangesh <mangesh.tembhurne@spdpl.com>",
+  "license": "WTFPL",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bunyan": "^1.8.12",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "joi": "^13.0.1",
+    "mongoose": "^4.4.4",
+    "nodemon": "^1.12.1"
+  }
+}
