@@ -33,3 +33,21 @@ exports.create = (req, res, next) => {
     });
 };
 
+
+exports.findaAll = (req, res, next) => {
+    // return schema.validate(req.body, { stripUnknown: true }, (err, params) => {
+    //     if (err) {
+    //         return res.status(409).json({ err: err });
+    //     }
+        return maindb.find()
+            .then((login) => {
+                console.log('login', login);
+                logger.debug('login', login);
+                return res.send(login);
+            })
+            .catch((err) => {
+                logger.error('err...', err);
+                return next();
+            });
+    // });
+};
